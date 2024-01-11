@@ -90,5 +90,10 @@
           once: true,
           mirror: false
         })
-      });
+    });
+    
+    const galleryLightbox = GLightbox({
+        selector: '.gallery-lightbox'
+    });
+    
 })()
