@@ -6,6 +6,8 @@
     <title>Al Yaasin Library</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="aos/aos.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
@@ -19,10 +21,10 @@
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#bestbook">Book</a></li>
-                    <li><a class="nav-link scrollto" href="#">Order</a></li>
+                    <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
                 </ul>
             </nav>
-            <a  class="buy-book">Buy Book</a>
+            <a  class="buy-book" href="#contact">Buy Book</a>
         </div>
     </header>
     <section id="hero" class="d-flex align-items-center">
@@ -212,8 +214,113 @@
                 </div>
             </div>
         </section>
+        <!--gallery section-->
+        <section id="gallery" class="gallery">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Gallery</h2>
+                    <p>Beberapa Foto Tentang Pustaka Kami</p>
+                </div>
+            </div>
+            <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+                <div class="row g-0">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="img/gallery1.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="img/gallery2.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="img/gallery3.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="img/gallery4.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="section-title">
+                    <h2>Hubungi Kami</h2>
+                    <p>Pemesanan buku dapat di lakukan memalui</p>
+                </div>
+            </div>
+            <div data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d415.93781303089446!2d110.52062403247166!3d-7.343828988935501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1704975359803!5m2!1sid!2sid" style=" width: 100%; height:350px; border:0;" loading="lazy" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>jalan Raden Rahmad nomor 12 Kalibening Tingkir Salatiga</p>
+                            </div>
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>pustakayaasin@gmail.com</p>
+                            </div>
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Phone:</h4>
+                                <p> +62831-6257-9101</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-4 row-mt-5 row-lg-0">
+                        <div class="owner" data-aos="zoom-in">
+                            <div class="imagehover">
+                                <img src="img/owner.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="owner-info">
+                                <div class="owner-info-content">
+                                    <h4>Muhammad Ihsan ibnu Zuhri</h4>
+                                    <span>Pengarang dan Penerjemah Buku</span>
+                                </div>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Pustaka Yaasin</span></strong>. All Right Reserved
+            </div>
+            <div class="credit">
+                Designed by <a href="#https://www.instagram.com/syahruu9/">syahrulMub</a>
+            </div>
+        </div>
+    </footer>
     <script text="js/javascript" src="aos/aos.js"></script>
+    <script text="js/javascript" src="glightbox/js/glightbox.min.js"></script>
     <script text="js/javascript" src="main.js"></script>
 </body>
 </html>
