@@ -14,17 +14,24 @@
 <body>
     <!--header section-->
     <header id="header" class="fixed-top d-flex justify-content-lg-between align-items-center">
-        <div class="container align-items-center">
-            <h1 class="logo me-auto me-lg-0"><a>Pustaka Yaasin</a></h1>
-            <nav id="navbar" class="navbar order-last order-lg-0">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#bestbook">Book</a></li>
-                    <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-                </ul>
+        <div class="container align-items-center justify-content-center">
+            <nav id="navbar" class="navbar navbar-expand-lg order-last order-lg-0">
+                <div class="container-fluid">
+                    <h1 class="logo me-auto me-lg-0"><a>Pustaka Yaasin</a></h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#bestbook">Book</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+                            <li class="nav-item"><a  class="buy-book" href="#contact">Buy Book</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <a  class="buy-book" href="#contact">Buy Book</a>
         </div>
     </header>
     <section id="hero" class="d-flex align-items-center">
@@ -320,6 +327,7 @@
         </div>
     </footer>
     <script text="js/javascript" src="aos/aos.js"></script>
+    <script text="js/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script text="js/javascript" src="glightbox/js/glightbox.min.js"></script>
     <script text="js/javascript" src="main.js"></script>
 </body>

@@ -23,6 +23,11 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
+* {
+    scroll-behavior: smooth;
+    scroll-margin: 81px;
+}
+
 /* -------------------------------
 section general
 ------------------------------- */
@@ -55,7 +60,7 @@ header section
     padding: 0;
     top: 40px;
     z-index: 997;
-    padding: 15px 0;
+    padding: 10px 0;
     background: rgb(29, 26, 26, 0.5);
 }
 
@@ -65,31 +70,42 @@ header section
 }
 
 #header .container {
-    display: flex;
-    align-items: center;
-    text-align: center;
+    /* display: flex; */
+    /* align-items: center;
+    text-align: center; */
     justify-content: space-between;
 }
 
 #header .logo {
     position: relative;
-    font-size: 20px ;
+    font-size: 30px ;
     padding: 0;
     margin: 0;
     line-height: 1;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    display: inline-block;
+    display: inline-block; 
     color: rgb(228, 211, 181);
+}
+
+.navbar .logo a {
+    font-size: 20px;
+}
+
+.navbar button {
+    color: #cda45e;
+}
+.navbar .navbar-toggler:focus {
+    color: #d49827;
 }
 
 .navbar {
     padding: 0;
 }
 
-.navbar .active, .nav-link:focus {
+.navbar .nav-item .active, .nav-link:focus {
     color: rgb(180, 118, 2);
 }
 
@@ -100,37 +116,45 @@ header section
 .navbar ul {
     margin: 0;
     padding: 0;
-    display: flex;
     list-style: none;
     align-items: center;
 }
-.navbar li {
+.navbar  li {
     position: relative;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
-.navbar a, .navbar a:focus {
+.navbar a {
+    color: white;
+}
+
+.navbar  a, .navbar  a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 20px 10px;
     white-space: nowrap;
     transition: 0.3s;
     font-size: 14px;
 }
 
-.buy-book {
+.navbar .navbar-toggler {
+    position: relative;
+
+}
+
+.navbar .nav-item .buy-book {
     margin: 0 0 0 15px;
     border: 2px solid rgb(243, 167, 26);
     color: white;
     border-radius: 20px;
-    padding: 8px 20px;
+    padding: 12px 20px;
     text-transform: uppercase;
     font-size: 13px;
 }
 .buy-book:hover{
-    background-color: rgb(122, 117, 91);
-    border:  2px solid rgb(243, 167, 26, 0.2);
+    background-color: rgb(243, 167, 26);
+    border:  2px solid  rgb(243, 167, 26);
 }
 
 /* -------------------------------
